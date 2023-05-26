@@ -15,6 +15,6 @@
 
 
 >Todo
->* My prediction accuracy is poor bad, 57%, I am gonna try improve it  by adding differents stocks indicators, add more data in future.
+>* My prediction accuracy is poorly bad, 57%, I am gonna try improve it  by adding differents stocks indicators, add more data in future.
 
 

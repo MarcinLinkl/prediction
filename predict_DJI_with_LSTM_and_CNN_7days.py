@@ -1,13 +1,11 @@
-from keras.layers import LSTM, Dense, Dropout, Flatten, Conv1D, MaxPooling1D, BatchNormalization
-from keras.models import Sequential
-from keras.callbacks import EarlyStopping, ModelCheckpoint
-import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
 import numpy as np
+import pandas as pd
+from keras.callbacks import EarlyStopping, ModelCheckpoint
+from keras.layers import LSTM, Dense, Dropout, BatchNormalization
+from keras.models import Sequential
+from keras.optimizers import RMSprop
 from sklearn.model_selection import train_test_split
-from keras.optimizers import Adam, RMSprop
-from sklearn.metrics import mean_squared_error, r2_score
-import yfinance as yf
+
 # download DJI
 # stock_data = yf.download("^DJI" ,interval ="1d",ignore_tz=True)[["Close"]]
 # stock_data.to_csv("DJI.csv")

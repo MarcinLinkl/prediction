@@ -1,19 +1,6 @@
 import yfinance as yf
-import pandas as pd
-from matplotlib import pyplot as plt
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from keras.models import Sequential
-from keras.layers import Dense, Dropout
-from sklearn.metrics import mean_squared_error
-from keras.callbacks import TensorBoard
-from sklearn.metrics import accuracy_score
-from datetime import date, timedelta
-import tensorflow as tf
-from sklearn.neural_network import MLPClassifier
-from sklearn.preprocessing import MinMaxScaler
-from yahoo_fin import stock_info as si
-# Tickery z Azji z yahoo finanse - wszystkie aktualne 
+
+# Tickery z Azji z yahoo finanse - wszystkie aktualne
 tickers_azja=['^GSPC','^N225', '^HSI', '^AXJO', '^KS11', '^BSESN', '^STI', '^TWII', '^KLSE', '^JKSE', '^NZ50', '^NSEI', '^BSESN', '^TWII', '^TWII']
 # pobieram dane bez uwzględnienia strefy czasowej
 df = yf.download(tickers_azja, ignore_tz=True)["Close"]

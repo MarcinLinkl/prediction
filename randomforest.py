@@ -1,26 +1,10 @@
-import yfinance as yf
-import pandas as pd
-from matplotlib import pyplot as plt
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from keras.models import Sequential
-from keras.layers import Dense, Dropout
-from sklearn.metrics import mean_squared_error
-from keras.callbacks import TensorBoard
-from sklearn.metrics import accuracy_score
-from datetime import date, timedelta
 import tensorflow as tf
-from sklearn.neural_network import MLPClassifier
-from sklearn.preprocessing import MinMaxScaler
-from yahoo_fin import stock_info as si
-import seaborn as sns
-from sklearn.preprocessing import MaxAbsScaler
-from sklearn.ensemble import RandomForestClassifier
 import yfinance as yf
-from sklearn.model_selection import train_test_split
+from keras.callbacks import TensorBoard
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
-import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MaxAbsScaler
 
 tensorboard = TensorBoard(log_dir='./logs', histogram_freq=0, write_graph=True, write_images=True)
 

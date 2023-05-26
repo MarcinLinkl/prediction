@@ -1,20 +1,13 @@
-import yfinance as yf
-import pandas as pd
-from matplotlib import pyplot as plt
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from keras.models import Sequential
-from keras.layers import Dense, Dropout
-from sklearn.metrics import mean_squared_error
-from keras.callbacks import TensorBoard
-from sklearn.metrics import accuracy_score
 from datetime import date, timedelta
-import tensorflow as tf
-from sklearn.neural_network import MLPClassifier
-from sklearn.preprocessing import MinMaxScaler,MaxAbsScaler
-from yahoo_fin import stock_info as si
-import seaborn as sns
-from tensorflow.keras import models, layers, optimizers, callbacks
+
+import pandas as pd
+import yfinance as yf
+from keras.layers import Dense, Dropout
+from keras.models import Sequential
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MaxAbsScaler
+from tensorflow.keras import optimizers, callbacks
+
 # tensorboard = TensorBoard(log_dir='./logs', histogram_freq=0, write_graph=True, write_images=True)
 
 tk_asia=['^GSPC','^N225', '^HSI', '^AXJO', '^KS11', '^BSESN', '^STI', '^TWII', '^KLSE', '^JKSE', '^NZ50', '^NSEI', '^BSESN', '^TWII', '^TWII']

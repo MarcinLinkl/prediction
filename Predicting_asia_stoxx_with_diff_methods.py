@@ -1,34 +1,8 @@
-import yfinance as yf
 import pandas as pd
-from matplotlib import pyplot as plt
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from keras.models import Sequential
-from keras.layers import Dense, Dropout
-from sklearn.metrics import mean_squared_error
-from keras.callbacks import TensorBoard
-from sklearn.metrics import accuracy_score
-from datetime import date, timedelta
-from sklearn.preprocessing import StandardScaler
-import tensorflow as tf
-from sklearn.neural_network import MLPClassifier
-from sklearn.preprocessing import MinMaxScaler
-from yahoo_fin import stock_info as si
 import numpy as np
-from sklearn.model_selection import GridSearchCV
-from sklearn.decomposition import PCA, KernelPCA
-from sklearn.ensemble import BaggingClassifier
-from sklearn.metrics import confusion_matrix, classification_report
-from sklearn.model_selection import GridSearchCV, train_test_split
-from sklearn.neural_network import MLPClassifier
-from sklearn.pipeline import Pipeline
+import pandas as pd
+from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.svm import SVC
-from sklearn.metrics import confusion_matrix, classification_report
-from sklearn.linear_model import LogisticRegression
-from keras.models import Sequential
-from keras.layers import Dense, LSTM
-
 
 df = pd.read_csv('tickers_asian_data_stocks.csv').set_index('Date').pct_change().dropna()
 # SCALING

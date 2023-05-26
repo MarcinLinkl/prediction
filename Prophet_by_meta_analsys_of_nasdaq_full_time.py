@@ -1,10 +1,6 @@
-import pandas as pd
-from prophet import Prophet
+import matplotlib.pyplot as plt
 import yfinance as yf
-import plotly.graph_objects as go
-import sys
-import numpy as np
-import matplotlib.pyplot as plt 
+from prophet import Prophet
 
 Ticker ='^ndx'
 df = yf.download(Ticker, interval="1d")["Close"]
